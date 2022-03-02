@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .inline {
+            display:inline;
+            background-color: red;
+        } /* Ele perde as propriedades como heigth e width */
+
+        .block {
+            display:block;
+            background-color:red;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        .inblock {
+            display:inline-block;
+            background-color:red;
+            height: 100px;
+            margin-bottom: 5px;
+            width: 100px;
+        }
+
+        .none {
+            background-color: red;
+            display: none;
+            height: 100px;
+            margin-bottom: 5px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Inline</h1>
+    <div class="inline">Display 1</div>
+    <div class="inline">Display 2</div>
+    <div class="inline">Display 3</div>
+    <hr>
+    <h1>Display block</h1>
+    <div class="block">block 1</div>
+    <div class="block">block 2</div>
+    <div class="block">block 3</div>
+    <hr>
+    <h1>Display inline-block</h1>
+    <div class="inblock">inline-block 1</div>
+    <div class="inblock">inline-block 2</div>
+    <div class="inblock">inline-block 3</div>
+    <hr>
+    <h1>Display none</h1>
+    <div class="none">none 1</div>
+    <div class="none">none 2</div>
+    <div class="none">none 3</div>
+    <hr>
+</body>
+</html>
