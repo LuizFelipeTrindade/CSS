@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family: 'Poppins', sans-serif
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+/* ========
+LAYOUT
+=========== */
+
+header h1 {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    text-align:center;
+}
+
+ img {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.grid1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-gap: 80px;
+}
+
+.grid1 > div:nth-child( n + 4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.grid1 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display:block;
+}
